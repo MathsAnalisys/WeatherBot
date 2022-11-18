@@ -38,4 +38,4 @@ jobs:
         pylint src
     - name: Test with pytest
       run: |
-        pytest tests/
+        pytest --cov src tests/ --cov-fail-under=75
