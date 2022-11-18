@@ -10,7 +10,7 @@ def main():
     dp = updater.dispatcher # dispatcher
     dp.add_handler(CommandHandler("start", start))
     updater.start_polling()
-    updater.idle()     
+    updater.idle() # idle
 if __name__ == "__main__":
     main()
     
