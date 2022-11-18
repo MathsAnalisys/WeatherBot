@@ -2,6 +2,7 @@ from telegram.ext import Updater, CommandHandler
 
 def start(update, context):
     update.message.reply_text("Hello World")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hello World")
 
 
 def main():
@@ -9,8 +10,7 @@ def main():
     dp = updater.dispatcher # dispatcher
     dp.add_handler(CommandHandler("start", start))
     updater.start_polling()
-    updater.idle()
-        
+    updater.idle()     
 if __name__ == "__main__":
     main()
-    # to be added
+    
