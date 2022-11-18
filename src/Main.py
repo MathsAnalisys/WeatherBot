@@ -1,4 +1,4 @@
-from telegram.ext import *
+from telegram.ext import Updater, CommandHandler
 
 def start(update, context):
     update.message.reply_text("Hello World")
