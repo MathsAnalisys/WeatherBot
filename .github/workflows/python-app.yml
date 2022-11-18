@@ -35,4 +35,5 @@ jobs:
         pylint src
     - name: Test with pytest
       run: |
-        pytest src tests/
+        pytest tests/
+        pytest src/
